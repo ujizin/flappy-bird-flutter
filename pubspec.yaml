@@ -50,6 +50,7 @@ flutter:
     - assets/images/flappy_bird_background.png
     - assets/images/floor.png
     - assets/images/flappy.png
+    - assets/images/pipe.png
   #   - images/a_dot_burr.jpeg
   #   - images/a_dot_ham.jpeg
 

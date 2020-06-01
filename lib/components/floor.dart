@@ -16,12 +16,20 @@ class Floor extends AnimationComponent with HasGameRef<FlappyBird> {
           200,
           Animation.sequenced(
             'floor.png',
-            2,
-            textureWidth: screenSize.width,
-            textureHeight: 200,
+            3,
+            textureWidth: 300,
+            textureHeight: 150,
           ),
         ) {
     x = 0;
     y = screenSize.height - 100;
+  }
+
+  @override
+  void update(double t) {
+    super.update(t);
+    if (gameRef.gameOver) {
+      this.clearEffects();
+    } else {}
   }
 }
